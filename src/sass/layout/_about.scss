@@ -1,0 +1,36 @@
+.about {
+  padding-top: 270px;
+}
+
+.teacher {
+  margin-bottom: 20px;
+}
+
+.teacher-photo {
+  width: 243px;
+  height: 305.58px;
+  margin-bottom: 20px;
+}
+
+.teacher-name {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--grey-text-color);
+}
+
+.experience {
+  list-style: none;
+
+  .experience-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+
+    &::before {
+      content: ' ';
+      background-image: url(../images/teacher-check.svg);
+    }
+  }
+}
