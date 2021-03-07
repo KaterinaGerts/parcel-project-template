@@ -1,5 +1,6 @@
 .about {
   padding-top: 270px;
+  padding-bottom: 50px;
 }
 
 .teacher {
@@ -23,6 +24,7 @@
   list-style: none;
 
   .experience-description {
+    position: relative;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -30,7 +32,11 @@
 
     &::before {
       content: ' ';
-      background-image: url(../images/teacher-check.svg);
+      position: absolute;
+      width: 17px;
+      height: 14px;
+
+      background-image: url('./images/teacher-check.svg');
     }
   }
 }
