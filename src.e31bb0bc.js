@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\check.svg":[["check.4b7c2681.svg","images/check.svg"],"images/check.svg"],"./..\\images\\bg-programm-img.png":[["bg-programm-img.4456a6a7.png","images/bg-programm-img.png"],"images/bg-programm-img.png"],"./..\\images\\bg-programm-img2.png":[["bg-programm-img2.1a48c49a.png","images/bg-programm-img2.png"],"images/bg-programm-img2.png"],"./..\\images\\bg-hero-mobile.png":[["bg-hero-mobile.5cacf7d3.png","images/bg-hero-mobile.png"],"images/bg-hero-mobile.png"],"./..\\images\\bg-hero-tablet.png":[["bg-hero-tablet.41a00e97.png","images/bg-hero-tablet.png"],"images/bg-hero-tablet.png"],"./..\\images\\bg-hero.png":[["bg-hero.b58e3bad.png","images/bg-hero.png"],"images/bg-hero.png"],"./..\\images\\fire.svg":[["fire.8570960f.svg","images/fire.svg"],"images/fire.svg"],"./..\\images\\bg-contacts-img.png":[["bg-contacts-img.55497c91.png","images/bg-contacts-img.png"],"images/bg-contacts-img.png"],"./..\\images\\vno.svg":[["vno.137f90dd.svg","images/vno.svg"],"images/vno.svg"],"./..\\images\\vno-ds.svg":[["vno-ds.e372bd5e.svg","images/vno-ds.svg"],"images/vno-ds.svg"],"./..\\images\\modern-teaching.svg":[["modern-teaching.a8a60508.svg","images/modern-teaching.svg"],"images/modern-teaching.svg"],"./..\\images\\teaching-ds.svg":[["teaching-ds.e6b2b359.svg","images/teaching-ds.svg"],"images/teaching-ds.svg"],"./..\\images\\garanty-result.svg":[["garanty-result.86726f1d.svg","images/garanty-result.svg"],"images/garanty-result.svg"],"./..\\images\\result-ds.svg":[["result-ds.9a860a8d.svg","images/result-ds.svg"],"images/result-ds.svg"],"./..\\images\\tel-icon.svg":[["tel-icon.1118470f.svg","images/tel-icon.svg"],"images/tel-icon.svg"],"./..\\images\\instagram.png":[["instagram.4b783f94.png","images/instagram.png"],"images/instagram.png"],"./..\\images\\instagram2x.png":[["instagram2x.47bf460e.png","images/instagram2x.png"],"images/instagram2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49337" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51809" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
