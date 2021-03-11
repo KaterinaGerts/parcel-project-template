@@ -12,6 +12,10 @@ body {
   color: var(--primaries-color);
   background-color: var(--light-color);
   letter-spacing: 0.08em;
+
+  &.modal-open {
+    overflow-y: hidden;
+  }
 }
 
 img {
