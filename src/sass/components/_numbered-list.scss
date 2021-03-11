@@ -13,27 +13,31 @@
       content: '— 0' counter(section);
     }
   }
-  & .item {
-    margin-bottom: 10px;
-  }
   & .text-wide {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.43;
+  }
+  @media screen and (max-width: 767px) {
+    & .item {
+      margin-bottom: 10px;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 30px 40px 17px 96px;
+    padding: 30px 40px 25px 96px;
     margin-right: -44px;
     margin-bottom: -8px;
     max-width: 688px;
     & .item {
       flex-basis: calc((100% - 88px) / 2);
       margin-right: 44px;
-      margin-bottom: 8px;
+      &:not(:nth-child(n + 4)) {
+        margin-bottom: 8px;
+      }
       & .text-wide {
         width: 100%;
       }
