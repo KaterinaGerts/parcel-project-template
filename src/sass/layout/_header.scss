@@ -139,6 +139,8 @@
     color: var(--light-color);
     @media screen and (min-width: 1366px) {
       color: var(--grey-text-color);
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     &:hover,
