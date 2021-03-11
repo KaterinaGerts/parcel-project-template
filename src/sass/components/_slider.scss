@@ -8,12 +8,9 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
-    padding: 0 105px;
+    width: 558px;
   }
   @media screen and (min-width: 1366px) {
-    padding-left: 266px;
-    padding-right: 266px;
     padding-bottom: 130px;
   }
 }
@@ -32,12 +29,12 @@
   fill: var(--acsent-color);
 
   @media screen and (min-width: 768px) {
-    top: -350%;
-    left: 30px;
+    top: -300%;
+    left: -75px;
   }
   @media screen and (min-width: 1366px) {
     top: -130%;
-    left: 5%;
+    left: -60%;
   }
 }
 .arrow-two {
@@ -47,11 +44,11 @@
   fill: var(--acsent-color);
 
   @media screen and (min-width: 768px) {
-    top: -350%;
-    right: 30px;
+    top: -300%;
+    right: -75px;
   }
   @media screen and (min-width: 1366px) {
     top: -130%;
-    right: 5%;
+    right: -60%;
   }
 }
