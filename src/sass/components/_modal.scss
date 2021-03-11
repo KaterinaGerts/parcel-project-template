@@ -1,0 +1,135 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--backdrop-color);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 93px 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  display: block;
+  position: relative;
+
+  padding: 40px;
+  height: 609px;
+  background: var(--light-color);
+  border-radius: 4px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(1);
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 528px;
+    height: 650px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 900;
+    color: var(--text-color);
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
+  }
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    background-color: var(--light-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      color: var(--icon-color);
+    }
+  }
+}
+.modal-list {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  .item + .item {
+    margin-top: 10px;
+  }
+
+  .input,
+  .comment {
+    width: 100%;
+    padding-left: 42px;
+    margin-top: 4px;
+    height: 30px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    @media screen and (min-width: 1366px) {
+      min-height: 30px;
+    }
+  }
+}
+
+.modal-list .comment {
+  padding: 12px 16px;
+
+  height: 120px;
+  resize: none;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal .button {
+  display: block;
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+  background-color: transparent;
+  color: var(--icon-color);
+
+  @media screen and (max-width: 480px) {
+    min-width: 200px;
+  }
+}
