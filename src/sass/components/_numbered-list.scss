@@ -8,9 +8,9 @@
     color: var(--acsent-color);
     line-height: 1.21;
     margin-bottom: 10px;
-    &::before {
+    &::after {
       counter-increment: section;
-      content: '— 0' counter(section);
+      content: '' counter(section);
     }
   }
   & .text-wide {
