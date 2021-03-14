@@ -33,6 +33,8 @@
   .action-card {
     margin-bottom: 15px;
     padding-top: 30px;
+    padding-left: 11px;
+    padding-right: 11px;
     width: 100%;
     height: 280px;
     background-color: var(--light-color);
@@ -147,12 +149,11 @@
   }
 }
 
-.action-text {
-  padding: 0 11px;
+.action-text {  
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 
   color: var(--accent-text-color);
 
