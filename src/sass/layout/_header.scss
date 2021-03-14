@@ -119,6 +119,7 @@
     );
     &.is-open {
       display: block;
+     
       z-index: 2;
 
       .button {
@@ -176,6 +177,7 @@
 
       font-size: 14px;
       line-height: 1.21;
+      text-transform: uppercase;
 
       .item + .item {
         margin-left: 40px;

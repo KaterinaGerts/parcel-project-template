@@ -30,7 +30,7 @@
   background: var(--light-color);
   border-radius: 4px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
@@ -103,6 +103,7 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    color: var(--primaries-color);
 
     @media screen and (min-width: 1366px) {
       min-height: 30px;
