@@ -5,6 +5,13 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   counter-reset: section;
   & .item-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 10px;
+      @media screen and (min-width: 1366px) {
+        font-size: 20px;
+      }
     color: var(--acsent-color);
     line-height: 1.21;
     margin-bottom: 10px;
