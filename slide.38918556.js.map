@@ -1,1 +1,0 @@
-{"version":3,"sources":["../slide.js"],"names":["$","slick"],"mappings":"AAAAA,CAAC,CAAC,SAAD,CAAD,CAAaC,KAAb","file":"slide.38918556.js","sourceRoot":"..\\src","sourcesContent":["$('.slider').slick();"]}
