@@ -5,13 +5,20 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   counter-reset: section;
   & .item-title {
-    color: var(--acsent-color);
+    font-weight: bold;
+    font-size: 14px;
     line-height: 1.21;
     margin-bottom: 10px;
+    
+    color: var(--acsent-color);
+    
     &::after {
       counter-increment: section;
       content: '' counter(section);
     }
+    @media screen and (min-width: 1366px) {
+    font-size: 20px;
+  }
   }
   & .text-wide {
     font-weight: bold;
